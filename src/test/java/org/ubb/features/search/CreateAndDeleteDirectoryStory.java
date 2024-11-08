@@ -39,7 +39,7 @@ public class CreateAndDeleteDirectoryStory {
         myUser.user_logging_in(ftpServerName, userName, password);
         // myUser.user_is_logged_in();
 
-        myUser.create_directory();
+        myUser.create_directory("coci_vvss");
         myUser.directory_is_created();
 
         myUser.delete_directory();

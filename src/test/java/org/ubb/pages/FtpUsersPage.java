@@ -12,7 +12,8 @@ public class FtpUsersPage extends PageObject {
 
 
 
-    public void create_directory() {
+    public void create_directory(String directoryName) {
+
         // TODO
     }
     public boolean directory_is_created() {

@@ -64,8 +64,8 @@ public class EndUserSteps {
     }
 
     @Step
-    public void create_directory() {
-        ftpUsersPage.create_directory();
+    public void create_directory(String directoryName) {
+        ftpUsersPage.create_directory(directoryName);
     }
 
     @Step
