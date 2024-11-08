@@ -12,8 +12,29 @@ public class FtpUsersPage extends PageObject {
 
 
 
+    public void create_directory() {
+        // TODO
+    }
+    public boolean directory_is_created() {
+        // TODO
+        return false;
+    }
+
+    public void delete_directory() {
+        // TODO
+    }
+
+    public boolean directory_is_deleted() {
+        // TODO
+        return false;
+    }
 
 
 
     public void logout() {logoutButton.click();}
+
+    public boolean user_is_logged_in() {
+        // TODO
+        return true;
+    }
 }

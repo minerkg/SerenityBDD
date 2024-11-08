@@ -22,4 +22,8 @@ public class FtpLogedOutPage extends PageObject {
                 .collect(Collectors.toList());
     }
 
+
+    public boolean user_is_logged_out() {
+        //TODO
+    }
 }

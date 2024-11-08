@@ -47,6 +47,4 @@ public class FtpHomePage extends PageObject {
 
 
 
-
-
 }
