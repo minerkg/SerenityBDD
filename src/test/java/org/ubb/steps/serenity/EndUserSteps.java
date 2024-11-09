@@ -1,5 +1,6 @@
 package org.ubb.steps.serenity;
 
+import groovyjarjarpicocli.CommandLine;
 import org.ubb.pages.FtpHomePage;
 import net.thucydides.core.annotations.Step;
 import org.ubb.pages.FtpLogedOutPage;
@@ -15,6 +16,12 @@ public class EndUserSteps {
     private FtpHomePage ftpHomePage;
     private FtpUsersPage ftpUsersPage;
     private FtpLogedOutPage ftpLogedOutPage;
+
+
+    @Step
+    public void open_home_page() {
+        ftpUsersPage.open();
+    }
 
     @Step
     public void enterServer(String server)
@@ -91,7 +98,17 @@ public class EndUserSteps {
 
     @Step
     public void should_see_logged_out_message(String message) {
-        assertThat(ftpLogedOutPage.getLogoutText(), hasItem(containsString(message)));
+        assertTrue(ftpLogedOutPage.user_is_logged_out());
+    }
+
+    @Step
+    public void back_after_create() {
+        ftpUsersPage.back_after_create();
+    }
+
+    @Step
+    public void back_after_delete() {
+        ftpUsersPage.back_after_delete();
     }
 
     public void user_logging_out() {

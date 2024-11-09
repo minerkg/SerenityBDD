@@ -8,19 +8,20 @@ import net.thucydides.core.pages.PageObject;
 @DefaultUrl("https://www.scs.ubbcluj.ro/vvta/net2ftp/")
 public class FtpHomePage extends PageObject {
 
+
     @FindBy(name="Save")
     private WebElementFacade saveCookieChoiceButton;
 
     @FindBy(name="ftpserver")
     private WebElementFacade FTPserverEditBox;
 
-    @FindBy(name="name")
+    @FindBy(name="username")
     private WebElementFacade userNameEditBox;
 
     @FindBy(name="password")
     private WebElementFacade passwordEditBox;
 
-    @FindBy(name="Login")
+    @FindBy(id="LoginButton1")
     private WebElementFacade loginButton;
 
 
